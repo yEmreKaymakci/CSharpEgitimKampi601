@@ -45,6 +45,7 @@
             this.btnCustomerUpdate = new System.Windows.Forms.Button();
             this.btnCustomerDelete = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.btnGetByCustomerId = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -187,6 +188,7 @@
             this.btnCustomerUpdate.TabIndex = 14;
             this.btnCustomerUpdate.Text = "Güncelle";
             this.btnCustomerUpdate.UseVisualStyleBackColor = false;
+            this.btnCustomerUpdate.Click += new System.EventHandler(this.btnCustomerUpdate_Click);
             // 
             // btnCustomerDelete
             // 
@@ -197,6 +199,7 @@
             this.btnCustomerDelete.TabIndex = 15;
             this.btnCustomerDelete.Text = "Sil";
             this.btnCustomerDelete.UseVisualStyleBackColor = false;
+            this.btnCustomerDelete.Click += new System.EventHandler(this.btnCustomerDelete_Click);
             // 
             // dataGridView1
             // 
@@ -206,14 +209,26 @@
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(1015, 504);
+            this.dataGridView1.Size = new System.Drawing.Size(1015, 561);
             this.dataGridView1.TabIndex = 16;
+            // 
+            // btnGetByCustomerId
+            // 
+            this.btnGetByCustomerId.BackColor = System.Drawing.Color.IndianRed;
+            this.btnGetByCustomerId.Location = new System.Drawing.Point(169, 566);
+            this.btnGetByCustomerId.Name = "btnGetByCustomerId";
+            this.btnGetByCustomerId.Size = new System.Drawing.Size(180, 45);
+            this.btnGetByCustomerId.TabIndex = 17;
+            this.btnGetByCustomerId.Text = "Id\'ye Göre Getir ";
+            this.btnGetByCustomerId.UseVisualStyleBackColor = false;
+            this.btnGetByCustomerId.Click += new System.EventHandler(this.btnGetByCustomerId_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1435, 574);
+            this.ClientSize = new System.Drawing.Size(1435, 623);
+            this.Controls.Add(this.btnGetByCustomerId);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.btnCustomerDelete);
             this.Controls.Add(this.btnCustomerUpdate);
@@ -260,6 +275,7 @@
         private System.Windows.Forms.Button btnCustomerUpdate;
         private System.Windows.Forms.Button btnCustomerDelete;
         private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.Button btnGetByCustomerId;
     }
 }
 
