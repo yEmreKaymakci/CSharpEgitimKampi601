@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using CSharpEgitimKampi601.Entities;
 using CSharpEgitimKampi601.Services;
 
 namespace CSharpEgitimKampi601
@@ -30,6 +31,12 @@ namespace CSharpEgitimKampi601
             };
             customerOperations.AddCustomer(customer);
             MessageBox.Show("Müşteri ekleme işlemi başarılı", "Uyarı", MessageBoxButtons.OK, MessageBoxIcon.Information);
+        }
+
+        private void btnList_Click(object sender, EventArgs e)
+        {
+            List<Customer> customers = customerOperations.GetAllCustomer();
+            dataGridView1.DataSource = customers;
         }
     }
 }

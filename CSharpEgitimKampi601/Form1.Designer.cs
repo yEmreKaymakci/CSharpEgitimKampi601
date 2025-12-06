@@ -40,10 +40,10 @@
             this.label5 = new System.Windows.Forms.Label();
             this.txtCustomerShoppingCount = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
-            this.btnList = new System.Windows.Forms.Button();
-            this.btnAdd = new System.Windows.Forms.Button();
-            this.btnUpdate = new System.Windows.Forms.Button();
-            this.btnDelete = new System.Windows.Forms.Button();
+            this.btnCustomerList = new System.Windows.Forms.Button();
+            this.btnCustomerAdd = new System.Windows.Forms.Button();
+            this.btnCustomerUpdate = new System.Windows.Forms.Button();
+            this.btnCustomerDelete = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
@@ -156,46 +156,47 @@
             this.label6.TabIndex = 10;
             this.label6.Text = "Alışveriş Tutarı:";
             // 
-            // btnList
+            // btnCustomerList
             // 
-            this.btnList.BackColor = System.Drawing.Color.IndianRed;
-            this.btnList.Location = new System.Drawing.Point(169, 332);
-            this.btnList.Name = "btnList";
-            this.btnList.Size = new System.Drawing.Size(180, 45);
-            this.btnList.TabIndex = 12;
-            this.btnList.Text = "Listele";
-            this.btnList.UseVisualStyleBackColor = false;
+            this.btnCustomerList.BackColor = System.Drawing.Color.IndianRed;
+            this.btnCustomerList.Location = new System.Drawing.Point(169, 332);
+            this.btnCustomerList.Name = "btnCustomerList";
+            this.btnCustomerList.Size = new System.Drawing.Size(180, 45);
+            this.btnCustomerList.TabIndex = 12;
+            this.btnCustomerList.Text = "Listele";
+            this.btnCustomerList.UseVisualStyleBackColor = false;
+            this.btnCustomerList.Click += new System.EventHandler(this.btnList_Click);
             // 
-            // btnAdd
+            // btnCustomerAdd
             // 
-            this.btnAdd.BackColor = System.Drawing.Color.IndianRed;
-            this.btnAdd.Location = new System.Drawing.Point(169, 390);
-            this.btnAdd.Name = "btnAdd";
-            this.btnAdd.Size = new System.Drawing.Size(180, 45);
-            this.btnAdd.TabIndex = 13;
-            this.btnAdd.Text = "Ekle";
-            this.btnAdd.UseVisualStyleBackColor = false;
-            this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
+            this.btnCustomerAdd.BackColor = System.Drawing.Color.IndianRed;
+            this.btnCustomerAdd.Location = new System.Drawing.Point(169, 390);
+            this.btnCustomerAdd.Name = "btnCustomerAdd";
+            this.btnCustomerAdd.Size = new System.Drawing.Size(180, 45);
+            this.btnCustomerAdd.TabIndex = 13;
+            this.btnCustomerAdd.Text = "Ekle";
+            this.btnCustomerAdd.UseVisualStyleBackColor = false;
+            this.btnCustomerAdd.Click += new System.EventHandler(this.btnAdd_Click);
             // 
-            // btnUpdate
+            // btnCustomerUpdate
             // 
-            this.btnUpdate.BackColor = System.Drawing.Color.IndianRed;
-            this.btnUpdate.Location = new System.Drawing.Point(169, 449);
-            this.btnUpdate.Name = "btnUpdate";
-            this.btnUpdate.Size = new System.Drawing.Size(180, 45);
-            this.btnUpdate.TabIndex = 14;
-            this.btnUpdate.Text = "Güncelle";
-            this.btnUpdate.UseVisualStyleBackColor = false;
+            this.btnCustomerUpdate.BackColor = System.Drawing.Color.IndianRed;
+            this.btnCustomerUpdate.Location = new System.Drawing.Point(169, 449);
+            this.btnCustomerUpdate.Name = "btnCustomerUpdate";
+            this.btnCustomerUpdate.Size = new System.Drawing.Size(180, 45);
+            this.btnCustomerUpdate.TabIndex = 14;
+            this.btnCustomerUpdate.Text = "Güncelle";
+            this.btnCustomerUpdate.UseVisualStyleBackColor = false;
             // 
-            // btnDelete
+            // btnCustomerDelete
             // 
-            this.btnDelete.BackColor = System.Drawing.Color.IndianRed;
-            this.btnDelete.Location = new System.Drawing.Point(169, 509);
-            this.btnDelete.Name = "btnDelete";
-            this.btnDelete.Size = new System.Drawing.Size(180, 45);
-            this.btnDelete.TabIndex = 15;
-            this.btnDelete.Text = "Sil";
-            this.btnDelete.UseVisualStyleBackColor = false;
+            this.btnCustomerDelete.BackColor = System.Drawing.Color.IndianRed;
+            this.btnCustomerDelete.Location = new System.Drawing.Point(169, 509);
+            this.btnCustomerDelete.Name = "btnCustomerDelete";
+            this.btnCustomerDelete.Size = new System.Drawing.Size(180, 45);
+            this.btnCustomerDelete.TabIndex = 15;
+            this.btnCustomerDelete.Text = "Sil";
+            this.btnCustomerDelete.UseVisualStyleBackColor = false;
             // 
             // dataGridView1
             // 
@@ -214,10 +215,10 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1435, 574);
             this.Controls.Add(this.dataGridView1);
-            this.Controls.Add(this.btnDelete);
-            this.Controls.Add(this.btnUpdate);
-            this.Controls.Add(this.btnAdd);
-            this.Controls.Add(this.btnList);
+            this.Controls.Add(this.btnCustomerDelete);
+            this.Controls.Add(this.btnCustomerUpdate);
+            this.Controls.Add(this.btnCustomerAdd);
+            this.Controls.Add(this.btnCustomerList);
             this.Controls.Add(this.txtCustomerShoppingCount);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.txtCustomerBalance);
@@ -254,10 +255,10 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.TextBox txtCustomerShoppingCount;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Button btnList;
-        private System.Windows.Forms.Button btnAdd;
-        private System.Windows.Forms.Button btnUpdate;
-        private System.Windows.Forms.Button btnDelete;
+        private System.Windows.Forms.Button btnCustomerList;
+        private System.Windows.Forms.Button btnCustomerAdd;
+        private System.Windows.Forms.Button btnCustomerUpdate;
+        private System.Windows.Forms.Button btnCustomerDelete;
         private System.Windows.Forms.DataGridView dataGridView1;
     }
 }
